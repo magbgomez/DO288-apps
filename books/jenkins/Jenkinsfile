@@ -10,8 +10,8 @@ pipeline {
     }
 
     environment {
-        DEV_PROJECT = "youruser-books-dev"
-        STAGE_PROJECT = "youruser-books-stage"
+        DEV_PROJECT = "miguelangel-gomez-books-dev"
+        STAGE_PROJECT = "miguelangel-gomez-books-stage"
         APP_GIT_URL = "https://github.com/magbgomez/DO288-apps"
         NEXUS_SERVER = "http://nexus-common.apps.cluster.domain.example.com/repository/nodejs"
 
