@@ -1,6 +1,7 @@
 echo "---> Personalization"
 
-cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/index5.html ./
+cp -Rf /tmp/src/index5.html /usr/local/apache2/htdocs/
 
 DATE='date "+%b %d, %Y @ %H:%M %p"'
 
