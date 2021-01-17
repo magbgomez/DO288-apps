@@ -1,0 +1,9 @@
+echo "---> Personalization"
+
+cp -Rf /tmp/src/*.html ./
+
+DATE='date "+%b %d, %Y @ %H:%M %p"'
+
+echo "---> adding date to info.html"
+echo "$DATE" >> ./info.html
+ 
