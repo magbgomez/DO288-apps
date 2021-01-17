@@ -1,10 +1,11 @@
 echo "---> Personalization"
 
-cp -Rf /tmp/src/index5.html ./
-cp -Rf /tmp/src/index5.html /usr/local/apache2/htdocs/
+cp -Rf /tmp/src/index5.htm ./
+cp -RF /tmp/src/*.html /var/www/html
 
 DATE='date "+%b %d, %Y @ %H:%M %p"'
 
 echo "---> adding date to info.html"
+sed -i s/THE-DATE/$DATE/ /var/www/html/info.html
 echo "$DATE" >> ./info.html
  
