@@ -6,4 +6,4 @@ RUN DATE='date "+%b %d, %Y @ %H:%M %p"'
 RUN echo '========================================================================================='
 RUN echo "---> adding date to info.html"
 RUN echo '========================================================================================='
-RUN echo "HOLA {$DATE} y adios" >> /var/www/html/info.html
+RUN echo date "+%b %d, %Y @ %H:%M %p" >> /var/www/html/info.html
