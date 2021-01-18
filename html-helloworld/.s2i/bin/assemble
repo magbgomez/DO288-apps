@@ -12,10 +12,10 @@ echo "-----------------------------------------> Personalization"
 
 /usr/libexec/s2i/assemble
 
-cp -af /tmp/html/. ./
+cp -af /tmp/html/. /var/www/html/
 
 DATE='date "+%b %d, %Y @ %H:%M %p"'
 
 echo "---> adding date to info.html"
-echo "the {$DATE} inserted " >> ./info.html
-sed -i s/THE-DATE/$DATE/ ./info.html 
+echo "the {$DATE} inserted " >> /var/www/html/info.html
+sed -i s/THE-DATE/$DATE/ /var/www/html/info.html 
