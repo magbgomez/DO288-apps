@@ -19,6 +19,6 @@ echo "-----------------------------------------> Personalization"
 
    DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
-   echo "---> adding date to info.html"
+   echo "---> adding date to info.html $DATE"
    echo "theee {$DATE} inserted " >> ./info.html
-   sed 's/THE_DATE/'$DATE'/' ./info.html > ./info4.html && mv ./info4.html ./info.html 
+   #sed 's/THE_DATE/'$DATE'/' ./info.html > ./info4.html && mv ./info4.html ./info.html 
