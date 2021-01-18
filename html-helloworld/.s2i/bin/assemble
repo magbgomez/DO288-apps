@@ -24,7 +24,7 @@ if [ $rc -eq 0 ]; then
 
    echo "---> adding date to info.html"
    echo "the {$DATE} inserted " >> ./info.html
-   sed -i s/THE-DATE/$DATE/ ./info.html 
+   sed -i s/THE_DATE/$DATE/ ./info.html 
 else
    echo "Error: assemble failed!"
 fi
