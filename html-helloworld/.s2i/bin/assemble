@@ -13,20 +13,12 @@ echo "-----------------------------------------> Personalization"
 /usr/libexec/s2i/assemble
 
 
-rc=$?
-if [ $rc -eq 0 ]; then
-
    echo "Making post-invocation changes..."
 
-   cp -af /tmp/src/*.html ./ 
+   cp -Rf /tmp/src/*.html ./ 
 
-   DATE=`date "+%b %d, %Y @ %H:%M %p"`
+   DATE='date "+%b %d, %Y @ %H:%M %p"'
 
    echo "---> adding date to info.html"
    echo "the {$DATE} inserted " >> ./info.html
-   sed -i 's/THE_DATE/'$DATE'/' ./info.html 
-else
-   echo "Error: assemble failed!"
-fi
-exit $rc
-
+   sed 's/THE_DATE/'$HOLA'/' ./info.html > ./info4.html && mv ./info4.html ./info.html 
