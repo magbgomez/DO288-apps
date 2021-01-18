@@ -17,8 +17,8 @@ echo "-----------------------------------------> Personalization"
 
    cp -Rf /tmp/src/*.html ./ 
 
-   DATE=´date '+%b %d, %Y @ %H:%M %p'´
+   DATE=´date "+%b %d, %Y @ %H:%M %p"´
 
    echo "---> adding date to info.html"
-   echo "the {$DATE} inserted " >> ./info.html
+   echo "theee {$DATE} inserted " >> ./info.html
    sed 's/THE_DATE/'$DATE'/' ./info.html > ./info4.html && mv ./info4.html ./info.html 
