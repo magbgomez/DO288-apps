@@ -1,11 +1,21 @@
+echo "-----------------------------------------> Personalization"
 echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "---> Personalization"
+echo "-----------------------------------------> Personalization"
 
-cp -Rf /tmp/src/index5.htm ./
-cp -RF /tmp/src/*.html /var/www/html
+/usr/libexec/s2i/assemble
+
+cp -af /tmp/html/. ./
 
 DATE='date "+%b %d, %Y @ %H:%M %p"'
 
 echo "---> adding date to info.html"
-sed -i s/THE-DATE/$DATE/ /var/www/html/info.html
-echo "$DATE" >> ./info.html
- 
+echo "the {$DATE} inserted " >> ./info.html
+sed -i s/THE-DATE/$DATE/ ./info.html 

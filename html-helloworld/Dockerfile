@@ -4,4 +4,17 @@ COPY index.html /var/www/html
 #COPY ./.s2i/bin/ /usr/libexec/s2i
 RUN DATE='date "+%b %d, %Y @ %H:%M %p"'
 RUN echo "---> adding date to info.html"
-RUN echo "$DATE" >> /var/www/html/info.html
+RUN echo "---> adding date to info.html"
+RUN echo "---> adding date to info.html"
+RUN echo "---> adding date to info.html"
+RUN echo "---> adding date to info.html"
+RUN echo "---> adding date to info.html"
+RUN echo "---> adding date to info.html"
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo '========================================================================================='
+RUN echo "HOLA {$DATE} y adios" >> /var/www/html/info.html
