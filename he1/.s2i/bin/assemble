@@ -1,3 +1,3 @@
----> echo 'starting the assemble personalization'
+echo '----> starting the assemble personalization'
 /usr/libexec/s2i/assemble
 cp /tmp/src/*.html .
